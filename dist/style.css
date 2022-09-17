@@ -230,7 +230,10 @@ section.section-3 .btn button {
     position: absolute;
     top: 0;
     right: 5%;
-    -webkit-filter: hue-rotate(168deg);
-            filter: hue-rotate(168deg);
+  }
+  #section-2 .example {
+    top: 5%;
+    -webkit-filter: hue-rotate(209deg);
+            filter: hue-rotate(209deg);
   }
 }
