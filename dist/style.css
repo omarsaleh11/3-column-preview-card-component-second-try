@@ -132,6 +132,14 @@ section .btn button {
   border-radius: 24px;
   border: none;
   padding: 0;
+  cursor: pointer;
+}
+section .btn button:hover {
+  -webkit-filter: hue-rotate(168deg);
+          filter: hue-rotate(168deg);
+}
+section .example {
+  display: none;
 }
 section.section-1 {
   background-color: var(--section-1);
@@ -155,4 +163,74 @@ section.section-3 {
 }
 section.section-3 .btn button {
   color: var(--section-3);
+}
+
+@media (min-width: 56.25em) {
+  main {
+    max-width: 75rem;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    margin-inline: auto;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  section {
+    padding: 3rem;
+    padding-right: 3.9375rem;
+  }
+  section .title {
+    margin-bottom: 1.625rem;
+    line-height: 47px;
+  }
+  section .desc {
+    margin-bottom: 5.375rem;
+    max-width: 21.5ch;
+  }
+  section .btn button {
+    width: 9.1875rem;
+  }
+  section.section-1 {
+    background-color: var(--section-1);
+    border-radius: 9px 0 0 9px;
+  }
+  section.section-1 .btn button {
+    color: var(--section-1);
+  }
+  section.section-2 {
+    background-color: var(--section-2);
+  }
+  section.section-2 .desc {
+    letter-spacing: 0.0035em;
+  }
+  section.section-2 .btn button {
+    color: var(--section-2);
+  }
+  section.section-3 {
+    background-color: var(--section-3);
+    border-radius: 0 9px 9px 0;
+  }
+  section.section-3 .btn button {
+    color: var(--section-3);
+  }
+}
+@media (min-width: 62.5em) {
+  .js {
+    position: absolute;
+    width: min(90%, 62.5rem);
+    height: min(80%, 34.375rem);
+    border-radius: 0 9px 9px;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .js .desc {
+    max-width: 32ch;
+    margin-bottom: 2.5rem;
+  }
+  .js .example {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 5%;
+    -webkit-filter: hue-rotate(168deg);
+            filter: hue-rotate(168deg);
+  }
 }

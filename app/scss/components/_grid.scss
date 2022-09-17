@@ -30,6 +30,13 @@ section {
   border-radius: 24px;
   border: none;
   padding: 0;
+  cursor: pointer;
+  &:hover {
+   filter: hue-rotate(168deg);
+  }
+ }
+ .example {
+  display: none;
  }
  &.section-1 {
   background-color: var(--section-1);
