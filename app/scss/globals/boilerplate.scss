@@ -17,7 +17,7 @@ body {
  height: 100%;
  padding: 0;
  text-rendering: optimizeSpeed;
- font-family: var(--font-body);
+ font-family: var(--ff-body);
 }
 .center {
  display: grid;
@@ -29,6 +29,7 @@ h1,
 h2,
 h3 {
  margin: 0;
+ font-family: var(--ff-h1);
 }
 
 p {
