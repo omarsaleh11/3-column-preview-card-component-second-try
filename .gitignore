@@ -6,6 +6,7 @@ gulpfile.js
 dist/boilerplate.css
 dist/breakpoints.css
 dist/colors.css
+dist/animations.css
 dist/fonts.css
 dist/functions.css
 dist/script.js
