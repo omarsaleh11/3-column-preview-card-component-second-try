@@ -1,4 +1,9 @@
 @use "../util" as *;
 main {
- padding: rem(39) 0 rem(150) 0;
+ padding: rem(88) rem(24);
+ display: grid;
+ grid-template-columns: 1fr;
+}
+section {
+ padding: rem(48) rem(49);
 }

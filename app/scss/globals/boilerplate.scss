@@ -30,9 +30,13 @@ h2,
 h3 {
  margin: 0;
  font-family: var(--ff-h1);
+ font-size: var(--h1-fs);
+ color: var(--h1-clr);
 }
 
 p {
+ color: var(--p-clr);
+ font-size: var(--p-fs);
  margin: 0;
 }
 a,
