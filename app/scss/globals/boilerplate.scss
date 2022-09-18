@@ -19,6 +19,7 @@ body {
  text-rendering: optimizeSpeed;
  font-family: var(--ff-body);
  background-color: var(--bg-h-btn);
+ overflow-x: hidden;
 }
 .center {
  display: grid;
