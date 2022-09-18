@@ -2,6 +2,7 @@
 main {
  padding: rem(88) rem(24);
  max-width: rem(500);
+ margin-inline: auto;
  display: grid;
  grid-template-columns: 1fr;
 }

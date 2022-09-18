@@ -1,5 +1,5 @@
 node_modules/
-app/scss/
+app/
 design/
 package-lock.json
 gulpfile.js
@@ -9,7 +9,6 @@ dist/colors.css
 dist/animations.css
 dist/fonts.css
 dist/functions.css
-dist/script.js
 dist/script.js.map
 dist/style.css.map
 dist/animations.css
