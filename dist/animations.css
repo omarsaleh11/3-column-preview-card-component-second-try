@@ -1,34 +1,58 @@
-.scale-up-left {
-  -webkit-animation: scale-up-left 1s linear alternate forwards;
-          animation: scale-up-left 1s linear alternate forwards;
+.js {
+  -webkit-animation: scale-left 1s linear alternate forwards;
+          animation: scale-left 1s linear alternate forwards;
 }
 
-@-webkit-keyframes scale-up-left {
+@-webkit-keyframes scale-left {
   0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+    width: 18.75rem;
+    height: 31.6875rem;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+    width: 61.25rem;
+    height: 29.75rem;
   }
 }
 
-@keyframes scale-up-left {
+@keyframes scale-left {
   0% {
-    -webkit-transform: scale(0.5);
-            transform: scale(0.5);
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+    width: 18.75rem;
+    height: 31.6875rem;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform-origin: 0% 50%;
-            transform-origin: 0% 50%;
+    width: 61.25rem;
+    height: 29.75rem;
+  }
+}
+.example {
+  -webkit-animation: come-from-the-right 1.5s linear alternate;
+          animation: come-from-the-right 1.5s linear alternate;
+}
+
+@-webkit-keyframes come-from-the-right {
+  0% {
+    right: -31.25rem;
+    display: none;
+  }
+  30% {
+    right: 0;
+    display: block;
+  }
+  100% {
+    right: 5%;
+  }
+}
+
+@keyframes come-from-the-right {
+  0% {
+    right: -31.25rem;
+    display: none;
+  }
+  30% {
+    right: 0;
+    display: block;
+  }
+  100% {
+    right: 5%;
   }
 }

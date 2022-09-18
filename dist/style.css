@@ -99,6 +99,64 @@ img {
     scroll-behavior: auto;
   }
 }
+.js {
+  -webkit-animation: scale-left 1s linear alternate forwards;
+          animation: scale-left 1s linear alternate forwards;
+}
+
+@-webkit-keyframes scale-left {
+  0% {
+    width: 18.75rem;
+    height: 31.6875rem;
+  }
+  100% {
+    width: 61.25rem;
+    height: 29.75rem;
+  }
+}
+
+@keyframes scale-left {
+  0% {
+    width: 18.75rem;
+    height: 31.6875rem;
+  }
+  100% {
+    width: 61.25rem;
+    height: 29.75rem;
+  }
+}
+.example {
+  -webkit-animation: come-from-the-right 1.5s linear alternate forwards;
+          animation: come-from-the-right 1.5s linear alternate forwards;
+}
+
+@-webkit-keyframes come-from-the-right {
+  0% {
+    right: -31.25rem;
+    display: none;
+  }
+  30% {
+    right: 0;
+    display: block;
+  }
+  100% {
+    right: 5%;
+  }
+}
+
+@keyframes come-from-the-right {
+  0% {
+    right: -31.25rem;
+    display: none;
+  }
+  30% {
+    right: 0;
+    display: block;
+  }
+  100% {
+    right: 5%;
+  }
+}
 main {
   padding: 5.5rem 1.5rem;
   max-width: 31.25rem;
@@ -214,12 +272,8 @@ section.section-3 .btn button {
 }
 @media (min-width: 62.5em) {
   main .js {
-    position: absolute;
-    width: min(90%, 62.5rem);
-    height: min(80%, 34.375rem);
+    position: relative;
     border-radius: 0 9px 9px;
-    -webkit-animation: scale-up-left 1s linear alternate forwards !important;
-            animation: scale-up-left 1s linear alternate forwards !important;
   }
   main .js .desc {
     max-width: 32ch;
@@ -235,5 +289,11 @@ section.section-3 .btn button {
     top: 5%;
     -webkit-filter: hue-rotate(209deg);
             filter: hue-rotate(209deg);
+  }
+  main section.none {
+    display: none;
+  }
+  main.width {
+    grid-template-columns: 61.25rem;
   }
 }
