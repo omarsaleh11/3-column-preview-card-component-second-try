@@ -1,7 +1,6 @@
 node_modules/
-.app/
-.design/
-package-lock.json
+app/
+design/
 gulpfile.js
 dist/boilerplate.css
 dist/breakpoints.css
@@ -12,4 +11,3 @@ dist/functions.css
 dist/script.js.map
 dist/style.css.map
 dist/animations.css
-\package-lock.json
