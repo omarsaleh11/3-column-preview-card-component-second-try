@@ -7,7 +7,6 @@ const sectionThree = document.getElementById("section-3");
 const mainEl = document.getElementById("main");
 btnElOne.addEventListener("click", () => {
  sectionOne.classList.toggle("js");
- sectionOne.classList.toggle("first-section");
  sectionTwo.classList.toggle("none");
  sectionThree.classList.toggle("none");
  mainEl.classList.toggle("width");
