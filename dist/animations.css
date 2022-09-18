@@ -1,56 +1,36 @@
-.js {
-  -webkit-animation: scale-left 1s linear alternate forwards;
-          animation: scale-left 1s linear alternate forwards;
-}
-
 @-webkit-keyframes scale-left {
   0% {
     width: 18.75rem;
     height: 31.6875rem;
   }
   100% {
-    width: 61.25rem;
-    height: 29.75rem;
+    width: min(90%, 61.25rem);
+    height: 30.3125rem;
   }
 }
-
 @keyframes scale-left {
   0% {
     width: 18.75rem;
     height: 31.6875rem;
   }
   100% {
-    width: 61.25rem;
-    height: 29.75rem;
+    width: min(90%, 61.25rem);
+    height: 30.3125rem;
   }
 }
-.example {
-  -webkit-animation: come-from-the-right 1.5s linear alternate;
-          animation: come-from-the-right 1.5s linear alternate;
-}
-
 @-webkit-keyframes come-from-the-right {
   0% {
     right: -1000px;
-    display: none;
-  }
-  30% {
-    display: block;
   }
   100% {
-    right: 5%;
+    right: 6%;
   }
 }
-
 @keyframes come-from-the-right {
   0% {
     right: -1000px;
-    display: none;
-  }
-  30% {
-    display: block;
   }
   100% {
-    right: 5%;
+    right: 6%;
   }
 }

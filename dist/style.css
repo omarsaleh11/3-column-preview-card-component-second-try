@@ -99,11 +99,6 @@ img {
     scroll-behavior: auto;
   }
 }
-.js {
-  -webkit-animation: scale-left 1s linear alternate forwards;
-          animation: scale-left 1s linear alternate forwards;
-}
-
 @-webkit-keyframes scale-left {
   0% {
     width: 18.75rem;
@@ -111,10 +106,9 @@ img {
   }
   100% {
     width: 61.25rem;
-    height: 29.75rem;
+    height: 30.3125rem;
   }
 }
-
 @keyframes scale-left {
   0% {
     width: 18.75rem;
@@ -122,39 +116,23 @@ img {
   }
   100% {
     width: 61.25rem;
-    height: 29.75rem;
+    height: 30.3125rem;
   }
 }
-.example {
-  -webkit-animation: come-from-the-right 1.5s linear alternate forwards;
-          animation: come-from-the-right 1.5s linear alternate forwards;
-}
-
 @-webkit-keyframes come-from-the-right {
   0% {
-    right: -31.25rem;
-    display: none;
-  }
-  30% {
-    right: 0;
-    display: block;
+    right: -1000px;
   }
   100% {
-    right: 5%;
+    right: 6%;
   }
 }
-
 @keyframes come-from-the-right {
   0% {
-    right: -31.25rem;
-    display: none;
-  }
-  30% {
-    right: 0;
-    display: block;
+    right: -1000px;
   }
   100% {
-    right: 5%;
+    right: 6%;
   }
 }
 main {
@@ -271,9 +249,13 @@ section.section-3 .btn button {
   }
 }
 @media (min-width: 62.5em) {
-  main .js {
+  main {
     position: relative;
+  }
+  main .js {
     border-radius: 0 9px 9px;
+    -webkit-animation: scale-left 1s linear alternate forwards;
+            animation: scale-left 1s linear alternate forwards;
   }
   main .js .desc {
     max-width: 32ch;
@@ -282,8 +264,10 @@ section.section-3 .btn button {
   main .js .example {
     display: block;
     position: absolute;
-    top: 0;
-    right: 5%;
+    top: 0%;
+    right: 6%;
+    -webkit-animation: come-from-the-right 1s linear alternate;
+            animation: come-from-the-right 1s linear alternate;
   }
   #section-2 .example {
     top: 5%;
@@ -294,6 +278,6 @@ section.section-3 .btn button {
     display: none;
   }
   main.width {
-    grid-template-columns: 61.25rem;
+    grid-template-columns: min(90%, 61.25rem);
   }
 }
