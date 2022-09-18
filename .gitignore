@@ -1,6 +1,6 @@
 node_modules/
-app/
-design/
+.app/
+.design/
 package-lock.json
 gulpfile.js
 dist/boilerplate.css
