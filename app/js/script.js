@@ -4,7 +4,12 @@ const btnElThree = document.getElementById("btn-el-3");
 const sectionOne = document.getElementById("section-1");
 const sectionTwo = document.getElementById("section-2");
 const sectionThree = document.getElementById("section-3");
+const logo = document.getElementById("logo");
+const about = document.getElementById("about");
 const mainEl = document.getElementById("main");
+logo.addEventListener("click", () => {
+ about.classList.toggle("none");
+});
 btnElOne.addEventListener("click", () => {
  sectionOne.classList.toggle("js");
  sectionTwo.classList.toggle("none");

@@ -16,3 +16,13 @@
   right: 6%;
  }
 }
+@keyframes scale-left-logo {
+ 0% {
+  width: rem(0);
+  font-size: rem(0);
+ }
+ 100% {
+  font-size: rem(15);
+  width: rem(400);
+ }
+}
