@@ -12,3 +12,4 @@ dist/functions.css
 dist/script.js.map
 dist/style.css.map
 dist/animations.css
+\package-lock.json
